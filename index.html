@@ -1,58 +1,135 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Tip Calculator</title>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jean's Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script type="text/javascript">
+        function scroll_to_div (div_id) {
+            $('html,body').animate(
+            {
+                scrollTop: $('#'+div_id).offset().top
+            },'slow');
+        }
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<!-- Ubuntu font -->
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-
-		<!-- Normalize.css -->
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	</head>
-	<body>
-		<div id="container">
-			<h1>Tip Calculator</h1>
-
-			<div id="Calculator">
-
-				<form>
-					<label>
-						How much was your bill?<br>
-						$ <input type="text" id="billAmount">
-					</label><br>
-					<label>
-						How was your service?<br>
-						  <select id="serviceQuality">
-						    <option disabled selected value="0">-- Choose an option --</option>
-						    <option value="0.3">30% - Outstanding</option>
-						    <option value="0.2">20% - Good</option>
-						    <option value="0.15">15% - It was okay</option>
-						  	<option value="0.1">10% - Bad</option>
-						  	<option value="0.05">5% - Terrible</option>
-						  </select>
-					</label><br>
-					<label>
-						How many people are sharing the bill?<br>
-						<input type="text" id="totalPeople"> people
-					</label><br>
-					<button type="button" id="calculate">Calculate!</button>
-				</form>
-				
-			</div><!-- calculator -->
-			<div id="totalTip">
-				<sup>$</sup><span id="tip">0.00</span>
-				<small id="each">each</small>
-				
-			</div><!-- totalTip -->
-			
-		</div> <!-- container -->
-
-		<script src="js/script.js"></script>
-	</body>
+        
+    </script>	
+</head>
+<body>
+	<section class="intro">
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="#about" onclick="scroll_to_div('div1')">About me</a></li>
+				<li><a href="#port" onclick="scroll_to_div('div2')">Portfolio</a></li>
+				<li><a href="#serv" onclick="scroll_to_div('div3')">Skills</a></li>
+				<li><a href="#contact" onclick="scroll_to_div('div4')">Contact Me</a></li>
+			</ul>
+		</nav>
+		<div class="inner">
+			<div class="content">
+				<h1>I am Jean,</h1>
+				<p>Your Friendly Neighborhood <br class="break">Aspiring Software Developer.</p>
+			</div>
+		</div>	
+	</section>
+	<a name="about">
+	<div class="clearfix"></div>
+	<section  class="left-col">
+		<h2 id="div1" >About Me</h2>
+		<p style="text-indent: 6%;">I am a recente graduate and aspiring Software Engineer offering a solid foundation in programming principles. Passionate about Software/Web Developement, I loves writing codes to build great products and help businesses succeed with their goals. Creative problem-solver with over 2 years experience working with clients to turn ideas into reality.<br class="break">
+        <strong>I am also Certified HTML Developer (w3schools)</strong></p>
+		<p>
+		Passionate about the Internet of Things, when I am not coding, I enjoy reading, cooking, swimming, mingling. 
+        One more thing, I am a self-proclaimed "tennis consultant".<p/>	
+	</section>
+	<section class="sidebar">
+		<img src="img/about.jpg">
+    </section>
+    <div class="clearfix"></div>
+    <a name="port">
+    	<h2 id="div2" >My Portfolio</h2>
+        <div id="image_div">
+    <section class="one-third-port img_wrapper">
+    	<a href="http://boriskonan.com/tipcalculator" target="_blank"><img src="img/tip.jpg">
+        <span><input type="button" value="Try it"></span></a>
+    </section>
+    <section class="one-third-port img_wrapper">
+    	<a href="http://cs.neiu.edu/~newton/motionlaw.html" target="_blank"><img src="img/simulation.jpg"><span><input type="button" value="Built with HTML, CSS, JavaScript, and jQuery"></span></a>
+    </section>
+     <section class="one-third-port img_wrapper">
+        <a href="http://www.8digest.com" target="_blank"><img src="img/blog2.jpg"><span><input type="button" value="Powered by WordPress"></span></a>
+    </section>
+    <section class="one-third-port img_wrapper">
+    	<a href="http://boriskonan.com/gamehub" target="_blank"><img src="img/huba.jpg"><span><input type="button" value="Built with HTML, CSS, PHP and Bootstrap"></span></a>
+    </section>
+    <section class="one-third-port img_wrapper">
+    	<a href="http://boriskonan.com/borisbookstore" target="_blank"><img src="img/store.jpg"><span><input type="button" value="Built with HTML, CSS, PHP and Bootstrap"></span></a>
+    </section>
+    <section class="one-third-port img_wrapper">
+    	<a href="http://boriskonan.com/terrance" target="_blank"><img src="img/port.jpg"><span><input type="button" value="PSD to HTML"></span></a>
+    </section>
+    <section class="one-third-port img_wrapper">
+        <a href="http://neiu.acm.org" target="_blank"><img src="img/acm.jpg"><span><input type="button" value="Powered by WordPress"></span></a>
+    </section>
+     <section class="one-third-port img_wrapper">
+        <a href="http://longbeachshuttle.com/lgb" target="_blank"><img src="img/shuttle.jpg"><span><input type="button" value="Powered by WordPress"></span></a>
+    </section>
+    <section class="one-third-port img_wrapper">
+        <a href="https://github.com/jeanbk/BrainTrainer" target="_blank"><img src="img/brainApp.jpg"><span><input type="button" value="Built with Android Studio (Java)"></span></a>
+    </section>
+     <section class="one-third-port img_wrapper">
+        <a href="https://github.com/jeanbk/Tic-Tac-Toe" target="_blank"><img src="img/tictactoe.jpg"><span><input type="button" value="Tic Tac Toe game using Java in NetBeans(IDE)"></span></a>
+    </section>
+     <section class="one-third-port img_wrapper">
+        <a href="http://boriskonan.com" target="_blank"><img src="img/portfolio.jpg"><span><input type="button" value="First Portfolio Powered by HTML5 Template"></span></a>
+    </section>
+   
+    </div>
+    <div class="clearfix"></div>
+    <a name="serv">
+    <section class="left-col">
+    	<h2 id="div3" >Languages and Technologies</h2>
+    <p><strong>Web Development:</strong> HTML, CSS, JavaScript, jQuery, WordPress.<br class="break">
+    <strong>Application Development:</strong> Java, PHP, SQL.
+    <br class="break"><strong>Mobile Development:</strong> Android Studio (Java)</p>
+    </section>
+    <section class="sidebar">
+    	<section class="contact">
+    		<p>html/css<progress value="85" max="100"></progress>
+    		javascript<progress value="60" max="100"></progress><br class="break">
+    		jQuery<progress value="70" max="100"></progress><br class="break">
+    		java<progress value="60" max="100"></progress>
+    	</section>	
+    </section>
+    <div class="clearfix"></div>
+    <a name="contact">
+    <section class="parallax">
+    	<div class="parallax-inner"></div>	
+    </section>
+    <div class="clearfix"></div>
+    <h2 id="div4" >Contact Me</h2>
+    <section class="contact">
+    	<p>Jean Boris Konan<br class="break"> 
+I am available for freelance or full-time opportunities.<br class="break">
+        <a href="mailto:jean@boriskonan.com">jean@boriskonan.com</a></p>
+    	<p>Greater Chicago Area <br class="break">Illinois <br class="break">60625</p>
+    </section>
+    <div class="clearfix"></div>
+    <footer>
+    	<ul class="social">
+    		<li id="one"><a href="https://twitter.com/IAMExceptional7" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    		<li id="two"><a href="https://www.linkedin.com/in/jeankonan" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    		<li id="three"><a href="https://github.com/jeanbk" target="_blank"><i class="fa fa-github"></i></a></li>
+    	</ul>
+    </footer>
+    <footer class="second">
+    	<p>&copy; Portfolio made with <i class="fa fa-heart"></i></p>    	
+    </footer> 
+    
+</body>
 </html>
