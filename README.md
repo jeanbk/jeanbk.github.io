@@ -2,5 +2,5 @@
 
 Hi Folks,
 
-This is a responsive tip calculator available at jeanbk.github.io that I found very useful to have when going out and when it comes to sharing the tip amount 
-with friends.
+This is my portfolio version 2.0 handed coded and inspired from the old one, template based availabale at boriskonan.com 
+As I stated in the footer, I built it with love.
