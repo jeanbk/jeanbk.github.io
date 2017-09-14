@@ -157,7 +157,7 @@ nav ul li a:hover {
 }*/
  .clearfix {
  	clear: both;
- 	height: 3%;
+ 	height: 0%;
  }
  .parallax {
  	background:url(../img/tianjin.jpg) repeat fixed 100%;
