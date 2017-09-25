@@ -33,7 +33,25 @@ img {
 	max-width: 100%;
 	height: auto;
 	width: auto;
+
 }
+
+  
+.circular {
+ border-radius: 50%;
+ box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+ position: relative;
+ top: 100px;
+}
+
+/*--- Navigation menu 
+
+.circular img {
+  width: 100%;
+  height: auto;
+}
+--*/
+
 .intro {
 	height: 100%;
 	width: 100%;
@@ -146,7 +164,7 @@ nav ul li a:hover {
  
  .contact p {
  	text-align: center;
- 	letter-spacing: 5px;
+ 	letter-spacing: 3px;
  }
 .contact a {
 	color: #2c2c2c;
@@ -241,6 +259,13 @@ nav ul li a:hover {
 
  /*--- Media queries --*/
 
+ @media screen and (max-width: 1280px) {
+
+ 	#image_div .img_wrapper:hover span {
+ 	display:none;
+	}
+
+ }
 
  @media screen and (max-width: 768px) {
  	#menu-icon {
@@ -294,12 +319,27 @@ nav ul li a:hover {
  	#image_div .img_wrapper:hover span {
  	display:none;
 	}
+
+	.circular {
+	   padding: 0;
+	   margin-left: 11%;
+	   position: relative;
+       top: 20px;
+    }
+
+    .twitterWidget {
+    	margin-left: 15%;
+    }
  }
 
- @media screen and (max-width: 1280px) {
+ @media screen and (max-width: 320px) {
 
- 	#image_div .img_wrapper:hover span {
- 	display:none;
-	}
+ 	.circular {
+	   padding: 0;
+	   margin-left: 1%;
+	   position: relative;
+       top: 20px;
+    }
 
  }
+
